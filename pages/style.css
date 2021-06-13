@@ -1,0 +1,148 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+.bg{
+    height: 100%;
+    width: 100%;
+    top: 0%;
+    left: 0%;
+    position: absolute;
+    background: #fc4a55;
+}
+.bg::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 80%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.1);
+}
+section{
+    display: flex;
+    padding: 100px;
+    overflow: hidden;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 100vh;
+}
+header{
+    position: absolute;
+    padding: 20px 100px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .logo label{
+    position: relative;
+    font-weight: 600;
+    color: white;
+    font-size: 2em;
+    cursor: pointer;
+}
+.nav{
+    list-style: none;
+    display: flex;
+    position: relative;
+}
+.nav li a{
+    display: inline-block;
+    color: #fff;
+    font-weight: 400;
+    margin-left: 10px;
+    padding: 5px 10px;
+    border-radius: 40px;
+}
+
+.nav li a:hover,
+.nav li a.active{
+    background: #fff;
+    color: #333;
+}
+.content{
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid; */
+}
+.text{
+    width: 600px;
+}
+.text h2{
+    font-size: 2em;
+    color: white;
+    line-height: 1.5em;
+    width: 200px;
+    padding: 10px 20px;
+}
+.text p{
+    line-height: 1.5em;
+    color: white;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+.text a{
+    color: #333;
+    background: white;
+    padding:10px;
+    margin-top: 10px;
+    border-radius: 40px;
+    font-weight: 600;
+}
+img{
+    width: 300px;
+    height: 300px;
+}
+.scroll{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 85%;
+}
+.scroll li{
+    list-style: none;
+    margin-left: 30px;
+    padding: 5px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 40px;
+    border: 2px solid rgba(255, 255, 255, 0.25);
+}
+
+.scroll li img{
+    padding: 5px;
+    position: relative;
+    width: 60px;
+    height: 60px; 
+    cursor: pointer;
+}
+.scroll li.active{
+    border: 2px solid white;
+}
+.social{
+    position: relative;
+
+}
+.social li{
+    list-style: none;
+}
+.social img{
+    width: 20px;
+    height: 20px;
+    filter: invert();
+    margin-top: 20px;
+    cursor: pointer;
+}
